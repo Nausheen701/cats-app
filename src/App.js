@@ -7,7 +7,10 @@ const App = () => {
   const [cats, setCats] =  useState([])
   const [searchTerm, setSearchTerm] = useState("")
 
-  
+  useEffect(() => {
+    searchCats('Bengal')
+  }, [])
+// console.log('i am here')
 
   return (
     <div classname="app">
