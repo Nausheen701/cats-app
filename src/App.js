@@ -12,6 +12,14 @@ const App = () => {
   }, [])
 // console.log('i am here')
 
+const searchCats = async (name) => {
+  console.log('looking for cats')
+  const response = await fetch(`${API_URL}`)
+  const data = await response.json()
+  console.log('trying')
+  setCats(data.Search)
+}
+
   return (
     <div classname="app">
      
