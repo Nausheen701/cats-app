@@ -1,5 +1,7 @@
 import './App.css'
 import React, { useEffect, useState } from 'react'
+import SearchIcon from './search.svg'
+import CatCard from './CatCard'
 
 const API_URL = 'https://thecatapi.com?api_key=04075186-a95b-4d78-9169-42ecc5a9b6ef'
 
