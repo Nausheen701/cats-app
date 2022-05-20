@@ -22,8 +22,22 @@ const searchCats = async (name) => {
 
   return (
     <div classname="app">
-     
+      <h1>Cats Galore</h1>
+
+      <div className="search">
+        <input
+          placeholder="Search for cats"
+          value= {searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <img  
+            src={SearchIcon}
+            alt="search"
+            onCLick={() => searchCats(searchTerm)}
+          />
       </div>
+
+    
     )
   }
 
