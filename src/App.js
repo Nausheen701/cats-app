@@ -36,7 +36,20 @@ const searchCats = async (name) => {
             onCLick={() => searchCats(searchTerm)}
           />
       </div>
-
+      {
+      cats?.length > 0 
+      ? ( 
+        <div className="container">  
+          {cats.map((cat) => (
+            <CatCard cat={cat} />
+          ))}
+        </div>
+         ) : (
+          <div className="empty">
+            <h2>No cats found</h2>
+            </div>
+        )}
+      </div>
     
     )
   }
